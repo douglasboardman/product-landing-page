@@ -1,0 +1,368 @@
+/* PRESETS */
+
+html {
+    font-family: 'Nunito', sans-serif;
+    /*font-family: 'Oxygen', sans-serif;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 70%;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+#div-logo a {
+    display: flex;
+}
+
+#header-img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+    object-fit: scale-down;
+    Margin: auto 0;
+}
+
+#nav-bar {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-bar a {
+    width: fit-content;
+    padding-left: 1.5rem;
+    text-align: right;
+    margin: auto 0;
+    color: #1d2d44;
+}
+
+#nav-bar a:hover {
+    color: #a75d06;
+}
+
+/* SECTION SUBSCRIPTION */
+
+#subscription {
+    display: flex;
+    justify-content: center;
+    background-color: #1d2d44;
+    color: white;
+}
+
+#subscription .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+}
+
+#subscription .inline-div {
+    width: 50%;
+}
+
+#product-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscription-form p {
+    margin-bottom: 1rem;
+}
+
+#email, #submit {
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#email {
+    width: 69%;
+    border-radius: 1rem;
+    border-color: transparent;
+}
+
+#form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    border: 0;
+    background: linear-gradient(0deg, #a75d06, #fbcc96);
+    color: white;
+    width: 29%;
+}
+
+#product-img {
+    width: 75%;
+    object-fit: scale-down;
+}
+
+/* SECTION FEATURES */
+
+#features {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#features .container {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-div {
+    width: calc(100% / 5);
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.feature-div img {
+    width: 75%;
+    height: auto;
+    max-height: 4rem;
+    max-width: 4rem;
+    margin: auto;
+}
+
+/* SECTION HOW IT WORKS */
+
+#how-it-works {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+    margin: 0;
+}
+
+#how-it-works h1 {
+    width: 100%;
+    margin: 4rem 0 0 0;
+}
+
+#how-it-works .container .inline-group-div {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+#how-it-works .container .inline-group-div .inline-div {
+    width: 50%;
+}
+
+#how-it-works .container .inline-group-div .inline-div ul{
+    margin-left: 2rem;
+}
+
+#how-it-works .container .inline-group-div .inline-div img{
+    width: 75%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+#how-it-works .container .inline-group-div .right-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* SECTION PRICING */
+
+#pricing {
+    background-color: #f7931e;
+    display: flex;
+    justify-content: center;
+}
+
+.plan {
+    padding: 1.5rem;
+    Margin: 1rem;
+    text-align: center;
+    background-color: whitesmoke;
+    color:#1d2d44;
+    border-radius: 3px;
+}
+
+#pricing .container {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.try-plan-button {
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border-color: transparent;
+    border: 0;
+    background: linear-gradient(0deg, #1d2d44, #5778a7);
+    color: white;
+}
+
+@media (max-width: 1450px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    .feature-div img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 990px) {
+    
+    .container {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 830px) {
+    
+    .container {
+        width: 80%;
+    }
+
+    #subscription .container {
+        display: block;
+        padding: 0 0 4rem 0;
+    }
+
+    #product-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #subscription .inline-div {
+        width: 100%;
+        padding: 4rem 0 0 0;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .container {
+        width: 85%;
+    }
+
+    #features .container {
+        display: block;
+    }
+
+    #pricing .container {
+        display: block;
+    }
+
+    .feature-div {
+        width: 100%;
+    }
+
+    #header nav a {
+        font-size: 0.8rem;
+    }
+
+    #how-it-works .container .inline-group-div {
+        display: block;
+    }
+
+    #how-it-works .container .inline-group-div .inline-div {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    
+    #how-it-works .container .inline-group-div .right-div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    
+    .container {
+        width: 90%;
+    }
+
+    #header nav a {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
