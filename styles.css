@@ -366,3 +366,9 @@ header .container {
         font-size: 1rem;
     }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
