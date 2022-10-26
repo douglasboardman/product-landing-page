@@ -5,6 +5,13 @@ html {
     /*font-family: 'Oxygen', sans-serif;*/
 }
 
+:root{
+    --size-h1: 3rem;
+    --size-h3: 1.5rem;
+    --h1-r-rate: 0.2rem; /* h1 reduction rate */
+    --h3-r-rate: 0.1rem; /* h3 reduction rate */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +20,14 @@ html {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: var(--size-h1);
     font-weight: 900;
     margin-bottom: 1rem;
 }
 
 h3 {
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: var(--size-h3);
 }
 
 .container {
@@ -162,15 +169,25 @@ header .container {
     width: calc(100% / 5);
     padding: 1rem;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
 .feature-div img {
-    width: 75%;
-    height: auto;
-    max-height: 4rem;
-    max-width: 4rem;
+    width: auto;
+    height: 4rem;
     margin: auto;
+}
+
+.feature-div h3 {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+.feature-div p {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
 }
 
 /* SECTION HOW IT WORKS */
@@ -247,14 +264,28 @@ header .container {
     color: white;
 }
 
+
+
+@media (min-width: 1900px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        width: 60%;
+    }
+}
+
 @media (max-width: 1450px) {
     
     h1 {
-        font-size: 2.5rem;
+        font-size: calc(var(--size-h1) - var(--h1-r-rate));
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: calc(var(--size-h3) - var(--h3-r-rate));
     }
 
     .container {
@@ -268,7 +299,11 @@ header .container {
 
 @media (max-width: 1150px) {
     h1 {
-        font-size: 2rem;
+        font-size: calc(var(--size-h1) - calc(var(--h1-r-rate) * 2));
+    }
+
+    h3 {
+        font-size: calc(var(--size-h3) - calc(var(--h3-r-rate) * 2));
     }
 
     .container {
@@ -284,7 +319,11 @@ header .container {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: calc(var(--size-h1) - calc(var(--h1-r-rate) * 3));
+    }
+
+    h3 {
+        font-size: calc(var(--size-h3) - calc(var(--h3-r-rate) * 3));
     }
 
 }
@@ -359,11 +398,11 @@ header .container {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: calc(var(--size-h1) - calc(var(--h1-r-rate) * 4));
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: calc(var(--size-h3) - calc(var(--h3-r-rate) * 3));
     }
 }
 
