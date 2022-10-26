@@ -402,7 +402,7 @@ header .container {
     }
 
     h3 {
-        font-size: calc(var(--size-h3) - calc(var(--h3-r-rate) * 3));
+        font-size: calc(var(--size-h3) - calc(var(--h3-r-rate) * 4));
     }
 }
 
